@@ -18,13 +18,13 @@
         // TODO: Завдання 1. Запуск двигуна: після виклику IsRunning дорівнює true.
         public void Start()
         {
-
+            IsRunning = true;
         }
 
         // TODO: Завдання 1. Зупинка двигуна: після виклику IsRunning дорівнює false.
         public void Stop()
         {
-
+            IsRunning = false;
         }
     }
 }

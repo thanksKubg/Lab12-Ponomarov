@@ -31,7 +31,15 @@
         // Якщо bar <= 0, нічого не змінюйте.
         public void Inflate(double bar)
         {
-
+            if (bar <= 0)
+            {
+                return;
+            }
+            Pressure = Pressure + bar;
+            if (Pressure > MaxPressure)
+            {
+                Pressure = MaxPressure;
+            }
         }
     }
 }
